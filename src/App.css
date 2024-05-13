@@ -1,0 +1,10 @@
+/* Example of a media query for smartphones */
+@media only screen and (max-width: 767px) {
+  /* Styles for small screens */
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
