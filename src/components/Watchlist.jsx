@@ -26,10 +26,10 @@ function Watchlist({watchlist,handleRemovefromwatchlist}) {
     <table className='w-full text-gray-600 text-center ' >
         <thead className='border-b-2 rounded-xl '>
            <tr>
-             <th>Name</th>
-             <th>Ratings</th>
-             <th>Popularity</th>
-             <th>Genre</th>
+             <th><h2>Name</h2></th>
+             <th><h2>Ratings</h2></th>
+             <th><h2>Popularity</h2></th>
+             <th><h2>Genre</h2></th>
            </tr>
         </thead>
 
@@ -41,12 +41,12 @@ function Watchlist({watchlist,handleRemovefromwatchlist}) {
             return  <tr className='border-b-2'>
             <td className='flex items-center p-2'>
               <img className='h-[6rem] w-[6rem] p-2  '  src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}/>
-              <div className='mx-4 font-serif'>{movie.original_title}</div>
+              <h2 className='mx-4 font-serif'>{movie.original_title}</h2>
             </td>
 
-            <td>{movie.vote_average}</td>
-            <td>{movie.popularity}</td>
-            <td>Action</td>
+            <td><h2>{movie.vote_average}</h2></td>
+            <td><h2>{movie.popularity}</h2></td>
+            <td><h2>Action</h2></td>
             <td onClick={()=>handleRemovefromwatchlist(movie)} className='text-red-500 cursor-pointer'>Delete</td>
           </tr>
           })}

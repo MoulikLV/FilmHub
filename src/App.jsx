@@ -8,6 +8,8 @@ import Watchlist from "./components/Watchlist";
 import Banner from "./components/Banner";
 
 import { BrowserRouter, Route, Routes, json } from "react-router-dom";
+import { ThemeProvider } from "./components/ThemeContext";
+
 
 function App() {
 
@@ -43,6 +45,7 @@ function App() {
 
   return (
     <>
+     <ThemeProvider>
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -50,6 +53,9 @@ function App() {
           <Route path="/watchlist" element={<Watchlist watchlist={watchlist} handleRemovefromwatchlist={handleRemovefromwatchlist}/>} />
         </Routes>
       </BrowserRouter>
+
+    </ThemeProvider>
+   
     </>
   );
 }

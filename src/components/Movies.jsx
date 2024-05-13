@@ -40,7 +40,7 @@ const handleNext=()=>{
         Trending Movies
       </div>
       <div className="flex justify-center my-5  ">
-        <input className="h-[3rem] w-[14rem]  p-3 outline-none rounded-xl items-center mb-5 bg-gray-200/70 "   placeholder="Search Movies" type="text" value={search} onChange={handlesearch}/>
+        <input id="inputsmovies" className="h-[3rem] w-[14rem]  p-3 outline-none rounded-xl items-center mb-5 bg-gray-200/70 "   placeholder="Search Movies" type="text" value={search} onChange={handlesearch}/>
       </div>
 
       <div className="flex flex-row  flex-wrap justify-around gap-8 ">
